@@ -39,7 +39,7 @@ A logger will only process log messages with severity at or higher than a specif
 
 Each node (in ``rclcpp`` and ``rclpy``) has a logger associated with it that automatically includes the node's name and namespace.
 If the node's name is externally remapped to something other than what is defined in the source code, it will be reflected in the logger name.
-Non-node loggers can also be created that use a specific name.
+Non-node loggers can also be created that use a specific name (see `this discussion <https://answers.ros.org/question/361542/ros-2-how-to-create-a-non-node-logger/>`_ for details).
 
 Logger names represent a hierarchy.
 If the level of a logger named "abc.def" is unset, it will defer to the level of its parent named "abc", and if that level is also unset, the default logger level will be used.
